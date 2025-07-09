@@ -1,116 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de vida</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel ="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoja de vida</title>
 
-    <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
+  <!-- Estilos y fuentes -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
-     <div class="container-lg my-5">
-        <div class="row shadow-lg rounded-4 overflow-hidden">
-            <!-- columna izquierda -->
-             <div class="col-md-4 bg-primary text-white p-4">
-                <header class="text-center">
-                    <img src="img.png"  class="img-fluid rounded-circle border border-4 border-white mb-3"
-                    alt="foto de perfil">
 
-                    <h1 class="fw-bold mb-1">JHAN POOL POSADA CASAS</h1>
-                    <h2 class="h5">Tecnologo En Desarrollo De Software</h2>
+  <!-- Botón para descargar -->
+  <div class="text-center my-4">
+    <button class="btn btn-success" onclick="downloadPDF()">
+      <i class="fa-solid fa-download me-2"></i> Descargar PDF
+    </button>
+  </div>
 
-                   
-                </header>
+  <!-- HOJA DE VIDA -->
+  <div class="container-lg my-5" id="cv">
+    <div class="row shadow-lg rounded-4 overflow-hidden">
+      <!-- Columna izquierda -->
+      <div class="col-md-4 bg-primary text-white p-4">
+        <header class="text-center">
+          <img src="img.png" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="foto de perfil">
+          <h1 class="fw-bold mb-1">JHAN POOL POSADA CASAS</h1>
+          <h2 class="h5">Tecnólogo En Desarrollo De Software</h2>
+        </header>
 
-                <section class="mb-4">
-                    
-                    <h5 class="fw-bold"> <i class="fa-solid fa-address-card me-3 mb-3"></i>Contacto</h5>
+        <section class="mb-4">
+          <h5 class="fw-bold"><i class="fa-solid fa-address-card me-3 mb-3"></i>Contacto</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://wa.me/573196151237" class="text-white"><i class="fa-brands fa-whatsapp me-2"></i>+57 3196151237</a></li>
+            <li class="mb-2"><a href="mailto:posadacasaj@gmail.com" class="text-white"><i class="fas fa-envelope me-2"></i>posadacasaj@gmail.com</a></li>
+            <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i>Manizales, Caldas, Colombia</li>
+            <li class="mb-2"><a href="https://www.linkedin.com/in/jhan-pool-posada-casas-07a297256/" class="text-white"><i class="fa-brands fa-linkedin-in me-2"></i>LinkedIn</a></li>
+            <li class="mb-2"><a href="https://github.com/JhanP9" class="text-white"><i class="fa-brands fa-github me-2"></i>GitHub</a></li>
+          </ul>
+        </section>
 
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="https://wa.me/573196151237?text=Estoy%20interesado%20en%20contratarte" class="text-white" target="_blank">
-                             <i class="fa-brands fa-whatsapp me-2"></i>+57 3196151237
-                             </a>
-                        </li>
+        <!-- HABILIDADES -->
+        <section class="mb-4">
+          <h5 class="fw-bold mb-3"><i class="fas fa-code me-2"></i>Habilidades</h5>
 
-                        <li class="mb-2">
-                           <a href="mailto:posadacasaj@gmail.com" class="text-white" target="_blank">
+          <div class="skill mb-3">
+            <div class="d-flex justify-content-between"><span>HTML/CSS</span><span>95%</span></div>
+            <div class="progress" style="height: 8px;"><div class="progress-bar" style="width: 95%;"></div></div>
+          </div>
 
-                            <i class="fas fa-envelope me-2"></i>posadacasaj@gmail.com
-                            </a>
-                        </li>
+          <div class="skill mb-3">
+            <div class="d-flex justify-content-between"><span>Java</span><span>50%</span></div>
+            <div class="progress" style="height: 8px;"><div class="progress-bar" style="width: 50%;"></div></div>
+          </div>
 
-                        <li class="mb-2">
-                            <i class="fa-solid fa-location-dot me-2"></i>Manizales-Caldas-Colombia
-                        </li>
+          <div class="skill mb-3">
+            <div class="d-flex justify-content-between"><span>JavaScript</span><span>50%</span></div>
+            <div class="progress" style="height: 8px;"><div class="progress-bar" style="width: 50%;"></div></div>
+          </div>
 
-                        <li class="mb-2">
-                            <a href="https://www.linkedin.com/in/jhan-pool-posada-casas-07a297256/" class="text-white" target="_blank">
-                            <i class="fa-brands fa-linkedin-in me-2"></i>Linkedin
-                            </a>
+          <div class="skill mb-3">
+            <div class="d-flex justify-content-between"><span>PHP</span><span>75%</span></div>
+            <div class="progress" style="height: 8px;"><div class="progress-bar" style="width: 75%;"></div></div>
+          </div>
+        </section>
+      </div>
 
-                        </li>
-
-                        <li class="mb-2">
-                            <a href="https://github.com/JhanP9" class="text-white" target="_blank">
-                            <i class="fa-brands fa-github me-2"></i>Github
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </section>
-                <!-- HABILIDADES -->
-                <section class="mb-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="fas fa-code me-2"></i>
-                        Habilidades
-                    </h5>
-
-                    <div class="skill mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span>HTML/CSS</span>
-                            <SPAn>95%</SPAn>
-                        </div>
-
-                        <div class="progress" style="height: 8px;">
-                            <div class="progress-bar" style="width: 95%;">
-                                
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="skill mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span>JAVA</span>
-                            <SPAn>50%</SPAn>
-                        </div>
-
-                        <div class="progress" style="height: 8px;">
-                            <div class="progress-bar" style="width: 50%;">
-                                
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </section>
-             </div>
-            <div class="col-md-8">
+      <!-- Columna derecha -->
+      <div class="col-md-8 bg-light p-4">
+        <section class="mb-5">
+          <h4 class="fw-bold text-primary mb-4"><i class="fas fa-briefcase me-2"></i>Experiencia laboral</h4>
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title fw-bold">Desarrollador Software Junior</h4>
+              <h5 class="card-subtitle mb-2 text-muted small">2020 - Actualidad</h5>
+              <h6 class="text-primary">Empresa Tecnológica XYZ</h6>
+              <ul class="mt-3">
+                <li>Liderazgo en equipo de Desarrollo.</li>
+                <li>Implementación de arquitectura API.</li>
+                <li>Optimización de rendimiento.</li>
+              </ul>
             </div>
-        </div>
-    </div>
+          </div>
+        </section>
 
-<!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <section class="mb-5">
+          <h4 class="fw-bold text-primary mb-4"><i class="fas fa-graduation-cap me-2"></i>Educación</h4>
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title fw-bold">Aspirante a Maestría en Inteligencia Artificial</h4>
+              <h5 class="card-subtitle mb-2 text-muted small">2024 - Actualidad (2026)</h5>
+              <h6 class="text-primary">Universidad de Caldas</h6>
+              <ul class="mt-3">
+                <li>Análisis de AI generacional</li>
+                <li>Conexión de redes neuronales</li>
+                <li>Aprendizaje Autónomo</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title fw-bold">Estudiante de Ingeniería Informática</h4>
+              <h5 class="card-subtitle mb-2 text-muted small">2024 - Actualidad (2026)</h5>
+              <h6 class="text-primary">Universidad de Caldas</h6>
+              <ul class="mt-3">
+                <li>Habilidades en desarrollo: Python, Java</li>
+                <li>Habilidades generales: HTML, CSS, JavaScript</li>
+                <li>Manejo de Git y GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
